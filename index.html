@@ -7,24 +7,26 @@
             <!--width: controls size of viewport
                 device-width: width of device screen in CSS px unit at a scale of 100%
                 initial-scale: first zoom level after loading page (1.0 means 100%) -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Happy+Monkey%7cJosefin+Sans">
+        <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css"> <!--Provices consistency so different browsers wont have different default property values-->
         <link rel="stylesheet" href="css/style.css"> <!--My custom style sheet-->
     </head>
     <body>
-        <header class="main-header">
-            <h1>Michael Sada&#xf1;a Salon</h1>
-            <nav>
-                <li><a>home</a></li> <!-- put team on this page -->
-                <li><a>about us</a></li>
-                <li><a>services</a></li>
-            </nav>
+        <header id="main-header">
+            <h1><a href="#main-header">Michael Sada&#xf1;a Salon</a></h1> <!-- About us --> 
+            <nav id="main-nav"><ul>
+                <li class="main-nav-option"><a href="html/services.html">Services</a></li>
+                <li class="main-nav-option"><a href="html/team.html">Team</a></li>
+                <li class="main-nav-option"><a href="html/products.html">Products</a></li>
+                <li class="main-nav-option"><a href="html/events.html">Events</a></li>
+                <li class="main-nav-option"><a href="html/contact-us.html">Contact Us</a></li>
+            </ul></nav>
         </header>
 
         <section>
         </section>
 
-        <footer class="main-footer">
+        <footer id="main-footer">
             <p>&copy;2019 Michael Salda&#xf1;a Salon. All Right Reserved</p>
         </footer>
     </body>
