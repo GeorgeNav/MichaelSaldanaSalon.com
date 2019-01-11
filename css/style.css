@@ -52,9 +52,10 @@ footer a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
+    align-items:center;
+    position: absolute;
     bottom: 0;
+    width: 100%;
     background: rgb(230,230,230);
 }
 #main-footer p {
@@ -64,7 +65,7 @@ footer a {
 }
 
 #main-footer .social-media-links {
-    margin-left: 0.5em;
+    margin: 0.5em;
 }
 
 #main-footer img {
