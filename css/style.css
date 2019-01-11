@@ -58,11 +58,15 @@ footer a {
     background: rgb(230,230,230);
 }
 #main-footer p {
-    padding: 0.25em;
-    margin-top: 0;
-    margin-bottom: 0;
+    padding: 0.5em;
+    margin: 0;
     color: grey;
 }
+
+#main-footer .social-media-links {
+    margin-left: 0.5em;
+}
+
 #main-footer img {
     height: 2em;
 }
