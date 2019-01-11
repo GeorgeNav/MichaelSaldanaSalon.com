@@ -38,10 +38,12 @@ footer a {
     margin-bottom: 0.5em;
     text-align: center;
 }
-#main-header a,
-#main-footer a {
+#main-header a {
     display: block;
     padding: 0.25em;
+}
+#main-header a,
+#main-footer a {
     width: 100%;
     text-decoration: none;
     color: black;
