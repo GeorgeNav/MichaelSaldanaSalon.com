@@ -35,7 +35,6 @@ article {
 
 /* Header */
 #main-header {
-    background: rgba(204, 204, 204, 0.5);
     top: 0;
 }
 #main-nav ul {
@@ -46,7 +45,11 @@ article {
     display: inline-block;
     text-justify: center;
     letter-spacing: 0.1em;
-    margin: 0.5em 0;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background: rgba(255,255,255,0.9);
+    border: 2px solid white;
 }
 
 /* Content */
