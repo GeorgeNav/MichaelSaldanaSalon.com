@@ -63,13 +63,24 @@ article {
     width: 100%;
     background-size: cover;
 /*     background-size: 100% auto; */
-    background-color: rgba(255,255,255,0.3);
-    background-blend-mode: lighten;
+/*     background-color: rgba(255,255,255,0.3);
+    background-blend-mode: lighten; */
     background-repeat: no-repeat;
     background-position: center;
 }
 #midtown { background-image: url(../images/salon/midtown/midtown-1.jpg); }
 #greenway { background-image: url(../images/salon/greenway/greenway-1.jpg); }
+
+#about {
+    text-align: center;
+    padding: 0 1em;
+}
+#about a {
+    color: lightblue;
+}
+#about a:active {
+    text-align: center;
+}
 
 /* Text */
 #logo {
