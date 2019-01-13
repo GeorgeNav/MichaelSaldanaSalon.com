@@ -22,12 +22,13 @@ a {
 #main-header,
 #main-footer {
     width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
 }
 
 /* Header */
 #main-header {
-    box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4);
-    position: fixed;
     top: 0;
 }
 #main-nav ul {
@@ -38,13 +39,13 @@ a {
     display: inline-block;
     text-justify: center;
     letter-spacing: 0.1em;
+    margin-top: 0.5em;
 }
 
 /* Content */
 
 #content {
     height: 200vh;
-    max-width: 1024px;
     margin: auto;
 }
 
@@ -53,19 +54,15 @@ a {
     text-align: center;
     height: 50%;
     width: 100%;
-    background-size: auto 100%;
+    background-size: cover;
 /*     background-size: 100% auto; */
     background-color: rgba(255,255,255,0.6);
     background-blend-mode: lighten;
     background-repeat: no-repeat;
     background-position: center;
 }
-#midtown {
-    background-image: url(../images/salon/midtown/midtown-1.jpg);
-}
-#greenway {
-    background-image: url(../images/salon/greenway/greenway-1.jpg);
-}
+#midtown { background-image: url(../images/salon/midtown/midtown-1.jpg); }
+#greenway { background-image: url(../images/salon/greenway/greenway-1.jpg); }
 #logo {
     position: absolute;
 }
@@ -76,14 +73,12 @@ a {
     text-decoration: none;
 }
 #main-footer {
-    box-shadow: inset 0 -7px 9px -7px rgba(0,0,0,0.4);
+    bottom: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 #main-footer p {
