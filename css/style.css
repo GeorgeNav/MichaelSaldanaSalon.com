@@ -1,119 +1,101 @@
 html {
-    position: relative;
-    min-height: 100%;
     scroll-behavior: smooth;
 }
 
 * {
     box-sizing: border-box;
-    font-family: 'ZCOOL XiaoWei', serif;
 }
 
 body {
-    margin-bottom: 71px;
+/*     margin-bottom: 71px; */
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    max-width: 100vw;
 }
 
-ul a,
-footer a {
-    font-family: 'ZCOOL XiaoWei', serif;
-}
-
-section {
-    text-align: center;
-}
-
-section p {
-    font-size: 1.25em;
-    margin: 0;
-    padding: 1em 1em;
-}
-
-h1 a {
-    color: white;
+a {
+    text-decoration: none;
+    color: black;
 }
 
 #main-header,
 #main-footer {
     width: 100%;
-    text-align: center;
 }
 
+/* Header */
 #main-header {
-    padding: 0 1em;
-    background: black;
+    box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
 }
-#main-header ul {
+#main-nav ul {
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
 }
-#main-header li {
-    background: white;
-    border-radius: 1em;
-    box-shadow: inset 0 0 20px black;
-    margin-bottom: 0.5em;
+.main-nav-option {
+    display: inline-block;
+    text-justify: center;
+    letter-spacing: 0.1em;
+}
+
+/* Content */
+
+#content {
+    height: 200vh;
+}
+
+.half {
     text-align: center;
-}
-#main-header a {
-    display: block;
-    padding: 0.25em;
-}
-#main-header img {
+    height: 50%;
     width: 100%;
+    background-size: auto 100%;
+/*     background-size: 100% auto; */
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-#main-header a,
-#main-footer a {
-    width: 100%;
-    text-decoration: none;
+#midtown {
+    background-image: url(../images/salon/midtown/midtown-1.jpg);
 }
-#main-header li a {
-    color: black;
+#greenway {
+    background-image: url(../images/salon/greenway/greenway-1.jpg);
 }
+#logo {
+    position: absolute;
+}
+
+/* Footer */
 #main-footer a {
     color: white;
+    text-decoration: none;
 }
-#main-header h1 {
-    margin: 0;
-}
-.main-nav-option:visited {
-    color: none;
-}
-
-section img {
-    width: 100%;
-    opacity: 20%;
-    transition: transform 0.5s;
-    mix-blend-mode: multiply;
-}
-
-section img:hover {
-    transform: scale(1.1);
-}
-
 #main-footer {
+    box-shadow: inset 0 -7px 9px -7px rgba(0,0,0,0.4);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items:center;
-    position: absolute;
+    align-items: center;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    background: black;
 }
 #main-footer p {
     padding: 0.5em;
     margin: 0;
-    color: grey;
 }
-
-.social-media-links {
-    margin: 0.5em;
-}
-
 #main-footer img {
     height: 2em;
 }
-
+.social-media-links a {
+    height: 100%
+}
+.social-media-links {
+    margin: 0.5em;
+}
 .stack-text {
     box-shadow: inset 0 0 50px black;
     background-size: cover;
@@ -121,4 +103,9 @@ section img:hover {
     background-blend-mode: lighten;
     background-repeat: no-repeat;
 }
-#salon-pic { background-image: url(../images/salon/salon-1.jpg); }
+
+@media (min-width: 1024px) {
+    .half {
+
+    }
+}
