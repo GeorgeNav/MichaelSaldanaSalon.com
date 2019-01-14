@@ -144,6 +144,9 @@ article {
 .bio:hover .profile-bio {
     opacity: 1;
 }
+.lightwidget-widget {
+    height: auto;
+}
 
 /* appointment-request.html */
 
