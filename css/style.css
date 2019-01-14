@@ -29,6 +29,7 @@ article {
 
 #main-header,
 #main-footer {
+    z-index: 100;
     width: 100%;
     position: fixed;
     left: 0;
@@ -114,12 +115,11 @@ article {
 
 /* team.html */
 .team-member {
-    max-height: 100vh;
+    max-width: 769px;
 }
 .bio {
     position: relative;
     margin: 0;
-    height: 50%;
 }
 .profile-pic {
     display: block;
@@ -134,7 +134,7 @@ article {
     bottom: 0;
     padding: 0.75em 1em;
     font-weight: 700;
-    z-index: 2;
+    z-index: 1;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-color: rgba(0,0,0,.7);
@@ -145,7 +145,7 @@ article {
     opacity: 1;
 }
 .lightwidget-widget {
-    height: auto;
+    width: 100%;
 }
 
 /* appointment-request.html */
