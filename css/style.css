@@ -53,7 +53,7 @@ article {
     letter-spacing: 0.1em;
 }
 .main-nav-option a {
-    padding: 0.25em;
+    padding: 0.5em;
 }
 
 /* Content */
@@ -102,10 +102,22 @@ article {
 }
 #main-footer img,
 #main-footer a {
-    height: 1.5em;
+    height: 2em;
 }
 #main-footer #links {
-    height: 1.5em;
+    height: 2em;
+}
+
+#content {
+    margin: auto;
+}
+
+#appointment {
+    margin: 3em auto;
+}
+#appointment-widget {
+    display: block;
+    margin: 0 auto;
 }
 
 @media (min-width: 1024px) {

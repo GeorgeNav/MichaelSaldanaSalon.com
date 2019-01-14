@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Michael Saldana Salon</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--width: controls size of viewport
+                device-width: width of device screen in CSS px unit at a scale of 100%
+                initial-scale: first zoom level after loading page (1.0 means 100%) -->
+        <link type="text/css" rel="stylesheet" href="https://www.demandforce.com/widget/css/widget.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css"> <!--Provices consistency so different browsers wont have different default property values-->
+        <link rel="stylesheet" href="css/style.css"> <!--My custom style sheet-->
+        <script type="text/javascript" src="js/functions.js"></script>
+    </head>
+    <body id="top">
+        <header id="main-header">
+            <nav id="main-nav"><ul>
+                <li class="main-nav-option"><a href="index.html">Home</a></li>
+                <li class="main-nav-option"><a href="services.html">Services</a></li>
+                <li class="main-nav-option"><a href="team.html">Team</a></li>
+            </ul></nav>
+        </header>
+        <div id="appointment">
+            <script type="text/javascript">
+                d3cp_bid = '119001199'; // Account ID in Business Portal
+                //d3cp_appt_source = 'My Website';  //Optional. See Instructions.
+                //d3cp_appt_returnpage = 'your_page_url'; //Optional. See Instructions.
+            </script>
+            <script src="https://local.demandforce.com/b/michaelsaldanasalon/scheduler.widget" type="text/javascript"></script>
+        </div>
+        <footer id="main-footer">
+            <div id="links">
+                <a href="https://www.facebook.com/MichaelSaldanaSalon/" target="_blank">
+                    <img src="images/icons/facebook.svg"></a> <!-- https://www.iconfinder.com/iconsets/black-white-social-media -->
+                <a href="https://www.yelp.com/biz/michael-saldana-salon-in-midtown-houston" target="_blank">
+                    <img src="images/icons/yelp.svg"></a>
+                <a href="https://www.instagram.com/michaelsaldanasalon/" target="_blank">
+                    <img src="images/icons/instagram.svg"></a>
+<!--                 <img src="https://www.demandforced3.com/images/logos/bttn/bttn_easyscheduler120.png" style="cursor: pointer;" name="scheduler_tile" id="scheduler_tile_s"  onclick="javascript:window.open('https://local.demandforce.com/b/michaelsaldanasalon/schedule?widget=1','newwindow', 'width=790px, top=0, left=0, toolbar=no, menubar=no, scrollbars=1, resizable=1, location=no, status=0');"> -->
+                <a href="appointment-request.index"><img src="images/icons/new-appointment.svg"></a>
+            </div>
+            <a href="index.html" id="logo">
+                <img src="images/logo.png"></a>
+            <a href="#top" onclick="scrollToTop(1000)">
+                <img src="images/icons/up-arrow.svg"></a>
+        </footer>
+    </body>
+</html>
