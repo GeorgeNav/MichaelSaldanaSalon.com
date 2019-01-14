@@ -114,18 +114,19 @@ article {
 
 /* team.html */
 .team-member {
-    height: 100vh;
+    max-height: 100vh;
 }
-
 .bio {
     position: relative;
     margin: 0;
+    height: 50%;
 }
 .profile-pic {
     display: block;
-    width: 100%;
+    max-width: 100%;
 }
 .profile-bio {
+    font-size: 0.9em;
     opacity: 0;
     position: absolute;
     color: #fff;
