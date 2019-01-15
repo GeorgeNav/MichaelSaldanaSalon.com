@@ -29,13 +29,12 @@ article {
 
 #main-header,
 #main-footer {
-    z-index: 100;
     width: 100%;
-    position: fixed;
-    left: 0;
-    right: 0;
 }
 
+#main-footer {
+    position: fixed;
+}
 /* Header */
 #main-header {
     top: 0;
@@ -110,42 +109,36 @@ article {
 }
 
 #content {
-    margin: auto;
+    margin: 0 auto 40px;
 }
 
 /* team.html */
+
 .team-member {
-    max-width: 769px;
-}
-.bio {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     margin: 0;
 }
+.profile {
+    margin: 0;
+    max-height: 100vw;
+    position: relative;
+}
 .profile-pic {
-    display: block;
-    max-width: 100%;
+    width: 100%;
 }
 .profile-bio {
-    font-size: 0.9em;
-    opacity: 0;
-    position: absolute;
-    color: #fff;
-    left: 0;
-    bottom: 0;
+    font-family: 'Charm', cursive;
+    color: white;
     padding: 0.75em 1em;
-    font-weight: 700;
-    z-index: 1;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    background-color: rgba(0,0,0,.7);
-    -webkit-transition: opacity .3s ease-in-out;
-    transition: opacity .3s ease-in-out;
-}
-.bio:hover .profile-bio {
+    margin: 0;
+/*     -webkit-box-sizing: border-box; */
+/*     -webkit-transition: opacity .3s ease-in-out; */
     opacity: 1;
-}
-.lightwidget-widget {
-    width: 100%;
+    transition: opacity .3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 /* appointment-request.html */
@@ -158,6 +151,9 @@ article {
     margin: 0 auto;
 }
 
-@media (min-width: 1024px) {
-
+@media (min-width: 769px) {
+    .team-member {
+        height: 384px;
+    }
+    
 }
