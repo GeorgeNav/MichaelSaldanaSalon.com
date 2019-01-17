@@ -83,6 +83,12 @@ article {
     text-align: center;
 }
 
+.snapwidget-widget {
+    border:none;
+    overflow:hidden;
+    width: 100%;
+}
+
 #logo {
     object-fit: contain;
 }
@@ -102,7 +108,7 @@ article {
 #main-footer a {
     height: 2em;
 }
-#main-footer #links {
+#main-footer .links {
     height: 2em;
 }
 
@@ -118,6 +124,7 @@ article {
 
 .profile-pic {
     position: relative;
+    perspective: 700px;
     margin: 0;
 }
 .profile-pic img {
@@ -152,5 +159,31 @@ article {
     margin: 0 auto;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 1023px) {
+    .team {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .team-member {
+        width: 256px;
+        margin: 5px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .team-member {
+        display: flex;
+        justify-content: space-between;
+        height: 256px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .team-member img {
+        max-width: 256px;
+    }
+    .team-member .snapwidget-widget {
+        max-width: 512px;
+    }
 }
