@@ -113,9 +113,10 @@ article {
 /* team.html */
 
 .team-member {
-    border: 2px solid rgb(0,0,0);
-    border-radius: 1em;
     margin: 1em;
+    box-shadow: 0 0 10px black;
+    border-radius: 1em;
+    padding: 1em;
 }
 
 .profile-pic {
@@ -124,7 +125,10 @@ article {
     margin: auto;
 }
 .profile-name {
-    margin: 0.5em;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    box-shadow: 0 0 10px black;
+    border-radius: 0.5em;
 }
 .profile-name,
 .profile-bio {
@@ -146,11 +150,7 @@ article {
 }
 
 .snapwidget-widget {
-    display: block;
-    border: none;
-    overflow: hidden;
-    width: 320px;
-    margin: auto;
+    width: 100%;
 }
 
 /* appointment-request.html */
