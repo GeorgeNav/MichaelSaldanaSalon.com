@@ -124,12 +124,12 @@ article {
     flex-wrap: wrap;
 }
 
-.team-member {
+.team-member { /* TODO: get width right */
     margin: 1em;
     box-shadow: 0 0 10px black;
-    border-radius: 1em;
+    border-radius: 1em 1em 0 0;
     padding: 0.5em;
-    width: 40%;
+    width: 44%;
 }
 
 .profile-pic {
@@ -140,10 +140,11 @@ article {
 .profile-name {
     font-size: 1.25em;
     justify-content: center;
-    margin: 0.5em 0;
+    margin: 0.5em 0 0 0;
     padding: 0.5em;
-    box-shadow: 0 0 10px black;
-    border-radius: 0.5em;
+    box-shadow: 0 0 5px black;
+/*     box-shadow: 0 0 10px black; */
+    border-radius: 0.5em 0.5em 0 0;
 }
 .profile-name,
 .profile-bio {
@@ -163,10 +164,17 @@ article {
     padding: 0.5em;
     line-height: 2em;
 }
-
 .instagram-feed {
-    width: 100%;
+    box-shadow: 0 0 5px black;
 }
+
+/* .circle {
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+    border-radius: 0 0 1em 1em;
+    overflow: auto;
+	position: relative;
+} */
 
 /* appointment-request.html */
 
