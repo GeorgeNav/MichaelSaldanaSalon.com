@@ -31,6 +31,12 @@ article {
 #main-footer {
     width: 100%;
 }
+#main-header {
+    max-width: 769px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
 
 #main-footer {
     position: fixed;
@@ -111,20 +117,29 @@ article {
 }
 
 /* team.html */
+.team {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
 
 .team-member {
     margin: 1em;
     box-shadow: 0 0 10px black;
     border-radius: 1em;
-    padding: 1em;
+    padding: 0.5em;
+    width: 40%;
 }
 
 .profile-pic {
     display: block;
-    width: 320px;
+    width: 100%;
     margin: auto;
 }
 .profile-name {
+    font-size: 1.25em;
+    justify-content: center;
     margin: 0.5em 0;
     padding: 0.5em;
     box-shadow: 0 0 10px black;
@@ -149,7 +164,7 @@ article {
     line-height: 2em;
 }
 
-.snapwidget-widget {
+.instagram-feed {
     width: 100%;
 }
 
@@ -164,13 +179,9 @@ article {
 }
 
 @media (min-width: 769px) {
-    .team {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
     .team-member {
         display: grid;
+        width: 100%;
     }
     .profile-pic {
         width: 256px;
@@ -190,7 +201,7 @@ article {
         text-align: left;
         padding-left: 0;
     }
-    .snapwidget-widget {
+    .instagram-feed {
         align-self: center;
         grid-row: 1/3;
         grid-column: 3;
