@@ -63,6 +63,9 @@ article {
 }
 
 /* Content */
+.big-logo {
+    width: 100%;
+}
 .half {
 /*     box-shadow: 0 0 8px 8px white inset; */
     text-align: center;
@@ -119,17 +122,17 @@ article {
 /* team.html */
 .team {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     flex-wrap: wrap;
 }
 
 .team-member { /* TODO: get width right */
-    margin: 1em;
     box-shadow: 0 0 10px black;
-    border-radius: 1em 1em 0 0;
+    border-radius: 0.25em 0.25em 0 0;
     padding: 0.5em;
-    width: 44%;
+    width: 45%;
+    margin-bottom: 1em;
 }
 
 .profile-pic {
@@ -140,11 +143,7 @@ article {
 .profile-name {
     font-size: 1.25em;
     justify-content: center;
-    margin: 0.5em 0 0 0;
     padding: 0.5em;
-    box-shadow: 0 0 5px black;
-/*     box-shadow: 0 0 10px black; */
-    border-radius: 0.5em 0.5em 0 0;
 }
 .profile-name,
 .profile-bio {
@@ -164,7 +163,11 @@ article {
     padding: 0.5em;
     line-height: 2em;
 }
-.instagram-feed {
+
+.snapwidget-widget {
+    width: 41vw;
+    height: 41vw;
+    margin: 0 auto;
     box-shadow: 0 0 5px black;
 }
 
@@ -190,33 +193,39 @@ article {
     .team-member {
         display: grid;
         width: 100%;
+        margin: 0.5em;
+        height: 500px;
     }
     .profile-pic {
-        width: 256px;
-        grid-row: 1/3;
+        height: 484px;
+        width: auto;
+        grid-row: 1;
         grid-column: 1;
+        margin: 0;
     }
-    .profile-name {
-        align-self: center;
+    .about-wrap {
         grid-row: 1;
         grid-column: 2;
+    }
+    .profile-name {
         text-align: left;
+    }
+    .snapwidget-widget {
+        margin: 10px;
+        height: 200px;
+        width: 200px;
+        float: right;
     }
     .profile-bio {
         display: block;
-        grid-row: 2;
-        grid-column: 2;
         text-align: left;
-        padding-left: 0;
-    }
-    .instagram-feed {
-        align-self: center;
-        grid-row: 1/3;
-        grid-column: 3;
-        width: 100%;
     }
 }
 
-@media (min-width: 1024px) {
-
+@media (min-width: 1080px) {
+    .team-member {
+        display: grid;
+        width: 49%;
+        height: auto;
+    }
 }
