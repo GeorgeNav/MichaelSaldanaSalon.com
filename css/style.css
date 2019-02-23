@@ -128,7 +128,6 @@ article {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0.5em;
 }
 .team-member { /* TODO: get width right */
     box-shadow: 0 0 5px black;
