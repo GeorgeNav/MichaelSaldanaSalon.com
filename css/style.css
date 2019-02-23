@@ -121,9 +121,6 @@ article {
 }
 
 /* team.html */
-#team-wrap {
-    padding: 0 0.5em;
-}
 .team {
     display: grid;
     width: 100%;
