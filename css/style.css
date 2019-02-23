@@ -130,6 +130,7 @@ article {
     box-shadow: 0 0 5px black;
     border-radius: 0.25em 0.25em 0 0;
     padding: 0.5em;
+    margin: 0.5em;
 }
 .team-member h2 {
     word-spacing: 100vw;
@@ -164,14 +165,10 @@ article {
 }
 .snapwidget-widget {
     width: 100%;
-    height: 45vw;
     box-shadow: 0 0 5px black;
 }
 #michael {
-    margin: 0.5em 0;
-}
-#michael .snapwidget-widget {
-    height: 95vw;
+    margin: 0.5em;
 }
 /* .circle {
 	-moz-border-radius: 50%;
@@ -200,7 +197,6 @@ article {
     }
     .team-member {
         display: grid;
-        margin-bottom: 0.5em;
     }
     .team-member h2 {
         word-spacing: normal;
@@ -238,15 +234,12 @@ article {
     }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1440px) {
     .team {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
     .team-member h2 {
         word-spacing: normal;
-    }
-    .team-member {
-        margin: 0;
     }
 }
