@@ -172,10 +172,14 @@ article {
 }
 .snapwidget-widget {
     width: 100%;
-    box-shadow: 0 0 5px black;
+    height: 40vw;
+    box-shadow: 0 0 10px black;
 }
 #michael {
     margin: 0.5em;
+}
+#michael .snapwidget-widget {
+    height: 80vw;
 }
 /* .circle {
 	-moz-border-radius: 50%;
