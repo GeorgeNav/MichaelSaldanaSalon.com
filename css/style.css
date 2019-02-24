@@ -69,19 +69,26 @@ article {
 .half {
 /*     box-shadow: 0 0 8px 8px white inset; */
     text-align: center;
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
 /*     background-size: 100% auto; */
     background-color: rgba(255,255,255,0);
-    background-blend-mode: lighten;
-    background-repeat: no-repeat;
-    background-position: center;
 }
-#midtown { background-image: url(../images/salon/midtown/midtown-1.jpg); }
-#greenway { background-image: url(../images/salon/greenway/greenway-1.jpg); }
+#midtown {
+    width: 100%;
+    display: block;
+}
+#greenway {
+    width: 100%;
+    display: block;
+}
+#midtown img,
+#greenway img {
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
 
 #about {
+    display: block;
     text-align: center;
     padding: 0 1em;
     margin: 0 auto 2em auto;
